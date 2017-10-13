@@ -20,28 +20,7 @@
 		</ul>
 		<a href="#" id="pull">Menu</a>
 	</nav>
-	<script
-  src="https://code.jquery.com/jquery-3.2.1.js"
-  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
-  crossorigin="anonymous"></script>
-	<script>
-		$(function() {
-			var pull 		= $('#pull');
-				menu 		= $('nav ul');
-				menuHeight	= menu.height();
-
-			$(pull).on('click', function(e) {
-				e.preventDefault();
-				menu.slideToggle();
-	});
-});
-
-	$(window).resize(function(){
-	var w = $(window).width();
-	if(w > 320 && menu.is(':hidden')) {
-		menu.removeAttr('style');
-	}
-});
-	</script>
+	<script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+	<script src="script.js"></script>
 </body>
 </html>
